@@ -15,26 +15,26 @@ for i in range(no):
         li.append(ll)
     print(li)
 
-small = li[0][0]
-high = li[0][0]
+    small = li[0][0]
+    high = li[0][0]
 
-for i in range(int(l[0])):
-    for j in range(int(l[1])):
-        if li[i][j]<small:
-            small = li[i][j]
-        if li[i][j]>high:
-            high = li[i][j]
+    for i in range(int(l[0])):
+        for j in range(int(l[1])):
+            if li[i][j]<small:
+                small = li[i][j]
+            if li[i][j]>high:
+                high = li[i][j]
 
-r_counter = []
-c_counter = []
+    r_counter = []
+    c_counter = []
 
-for i in range(int(l[0])):
-    for j in range(int(l[1])):
-        if li[i][j] == small or li[i][j] == high:
-            if i not in r_counter:
-                r_counter.append(i)
-            if j not in c_counter:
-                c_counter.append(j)
+    for i in range(int(l[0])):
+        for j in range(int(l[1])):
+            if li[i][j] == small or li[i][j] == high:
+                if i not in r_counter:
+                    r_counter.append(i)
+                if j not in c_counter:
+                    c_counter.append(j)
                 
-out = (int(l[0])-len(r_counter)) * (int(l[1])-len(c_counter))
-print(out)
+    out = (int(l[0])-len(r_counter)) * (int(l[1])-len(c_counter))
+    print(out)
