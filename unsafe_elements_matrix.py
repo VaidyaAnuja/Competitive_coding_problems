@@ -34,4 +34,5 @@ for i in range(T):
                     c_counter.append(j)
     out = (int(N)-len(r_counter)) * (int(M)-len(c_counter))
     print(out)
+    li.clear()
 
